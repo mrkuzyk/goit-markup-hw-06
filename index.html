@@ -530,7 +530,8 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
+        <!-- is-hidden вверху вставити -->
         <div class="modal">
             <button type="button" class="modal-btn" data-modal-close>
                 <svg 
@@ -540,6 +541,22 @@
                     <use href="./images/sprite.svg#icon-close"></use>
                 </svg>
             </button>
+            <form class="modal-form">
+                <p class="modal-form-head">Оставьте свои данные, мы вам перезвоним</p>
+                <label class="modal-form-label"> Имя
+                    <input class="modal-form-input" type="text" name="name">
+                </label>
+                <label class="modal-form-label"> Телефон
+                    <input class="modal-form-input" type="tel" name="tel">
+                </label>
+                <label class="modal-form-label"> Почта
+                    <input class="modal-form-input" type="email" name="email">
+                </label>
+                <label class="modal-form-label">Комментарий
+                    <textarea class="modal-form-coments" name="coments" placeholder="Введите текст"></textarea>
+                </label>
+                <button class="modal-form-btn" type="submit">Отправить</button>
+            </form>
         </div>
     </div>
     <script src="./js/nodal.js" ></script>
