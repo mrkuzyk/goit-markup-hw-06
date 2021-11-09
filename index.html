@@ -581,8 +581,13 @@
                 <label class="modal-form-label">Комментарий
                     <textarea class="modal-form-coments" name="coments" placeholder="Введите текст"></textarea>
                 </label>
-                <input type="checkbox" id="accept-policy">
-                <label class="modal-policy" for="accept-policy">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+                <input class="modal-form-checkbox visually-hidden" type="checkbox" id="accept-policy">
+                <label 
+                    class="modal-policy" 
+                    for="accept-policy">
+                    Соглашаюсь с рассылкой и принимаю&nbsp; 
+                    <a href="">Условия договора</a>
+                </label>
                 <button class="modal-form-btn" type="submit">Отправить</button>
             </form>
         </div>
