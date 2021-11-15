@@ -1007,14 +1007,14 @@ header {
   cursor: pointer;
   margin-right: 7px;
 
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-image 250ms cubic-bezier(0.4, 0, 0.2, 1) background-size 250ms
-      cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-image 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-checkbox:checked + .modal-policy::before {
   border-radius: 2px;
-  border: var(--accent-color);
+  border-color: var(--accent-color);
   background-image: url(../images/icon-check.svg);
   background-size: cover;
   background-origin: border-box;
